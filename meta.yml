@@ -1,0 +1,11 @@
+---
+name: Pilas, colas y listas
+locale: es
+type: learning
+beta: false
+teacher_info: ''
+language: ruby
+id_format: "%05d"
+order:
+- 1
+private: false

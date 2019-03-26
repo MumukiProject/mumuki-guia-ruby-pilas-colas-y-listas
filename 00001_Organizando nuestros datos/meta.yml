@@ -1,0 +1,22 @@
+---
+tags: []
+layout: input_bottom
+editor: single_choice
+type: problem
+extra_visible: false
+language: text
+manual_evaluation: false
+choices:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: En una revista
+  checked: false
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: En una enciclopedia
+  checked: false
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: En un calendario
+  checked: true
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: En una servilleta
+  checked: false
+name: Organizando nuestros datos

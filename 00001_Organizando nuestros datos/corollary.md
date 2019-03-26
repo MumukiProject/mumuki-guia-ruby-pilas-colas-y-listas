@@ -1,0 +1,1 @@
+¡Correcto! Anotar cada cumpleaños en el día correspondiente del calendario es la forma **más adecuada** de almacenar esa información: es fácil de guardar y fácil de acceder. :point_right:
