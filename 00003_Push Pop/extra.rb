@@ -1,0 +1,1 @@
+lugaresDeMiBarrio = [plaza, museo, escuela, hospital, estacionDeTren]
