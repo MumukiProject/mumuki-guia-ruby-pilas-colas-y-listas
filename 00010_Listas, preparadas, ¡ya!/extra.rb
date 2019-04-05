@@ -1,0 +1,1 @@
+posiciones_carrera = [rocio, ivana, daniela, laura, carolina, monica, karen, nadia]
