@@ -1,0 +1,1 @@
+argentinos_con_premio_nobel = ["Carlos Saavedra Lamas", "Bernardo Alberto Houssay", "Luis Federico Leloir", "Adolfo Pérez Esquivel", "César Milstein"]
