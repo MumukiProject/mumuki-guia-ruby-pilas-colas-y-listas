@@ -9,7 +9,7 @@ Por ejemplo, para sacar el plato que está abajo de todo, primero tendrías que 
 Imaginá que tenemos en nuestro programa una pila que guardó algunos lugares de un barrio, en el orden de inserción en el que aparecen:
 
 ```ruby
-lugaresDeMiBarrio = [plaza, museo, escuela, hospital, estacionDeTren]
+lugares_de_mi_barrio = [plaza, museo, escuela, hospital, estacion_de_tren]
 ```
 
 > Marcá las opciones correctas.

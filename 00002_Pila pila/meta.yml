@@ -8,7 +8,7 @@ language: text
 manual_evaluation: false
 choices:
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: La `estacionDeTren` fue el primer elemento que se insertó
+  value: La `estacion_de_tren` fue el primer elemento que se insertó
   checked: false
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   value: Para quitar la `escuela`, antes hay que quitar el `hospital`
