@@ -1,0 +1,1 @@
+Las colas entienden el mensaje `size`, que nos dice cuántos elementos hay en ella.
