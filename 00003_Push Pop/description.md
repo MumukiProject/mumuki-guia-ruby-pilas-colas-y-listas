@@ -2,8 +2,8 @@ En Ruby contamos con un mensaje para agregar elementos al final del array (`push
 
 ¿Y si ya quitamos todos los elementos pero seguimos haciendo `pop`? Cuando ya no quedan elementos que quitar, la ejecución del método devuelve `nil`. `nil` es una forma de decir "no hay nada": ya no quedan elementos, así que no hay ningún elemento que te pueda devolver. :triumph:
 
-> Experimentá con la pila `lugaresDeMiBarrio` y agregale un `kiosco` utilizando `push`. Luego, hacé `pop` hasta quitar todos los elementos.
+> Experimentá con la pila `lugares_de_mi_barrio` y agregale un `kiosco` utilizando `push`. Luego, hacé `pop` hasta quitar todos los elementos.
 
 > Recordá que el mensaje se lo podés enviar a la pila de la siguiente forma:
 
-> `ム lugaresDeMiBarrio.pop`
+> `ム lugares_de_mi_barrio.pop`

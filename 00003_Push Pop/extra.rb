@@ -1,1 +1,1 @@
-lugaresDeMiBarrio = [plaza, museo, escuela, hospital, estacionDeTren]
+lugares_de_mi_barrio = [plaza, museo, escuela, hospital, estacionDeTren]
