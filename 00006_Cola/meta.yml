@@ -1,0 +1,22 @@
+---
+tags: []
+layout: input_bottom
+editor: multiple_choice
+type: problem
+extra_visible: false
+language: text
+manual_evaluation: false
+choices:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: Agregar los elementos al principio y quitarlos del principio
+  checked: false
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: Agregar los elementos al principio y quitarlos del final
+  checked: true
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: Agregar los elementos al final y quitarlos del final
+  checked: false
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: Agregar los elementos al final y quitarlos del principio
+  checked: true
+name: Cola
