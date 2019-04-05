@@ -1,0 +1,1 @@
+paginasVisitadas = ["wikipedia.org", "mumuki.io", "github.com"]

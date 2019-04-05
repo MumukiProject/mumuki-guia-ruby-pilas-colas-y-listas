@@ -1,9 +1,9 @@
 ---
 tags: []
-layout: input_bottom
-editor: 0
-type: playground
+layout: input_right
+editor: code
+type: problem
 extra_visible: false
 manual_evaluation: false
 choices: []
-name: Push Pop
+name: Yendo para atrás
