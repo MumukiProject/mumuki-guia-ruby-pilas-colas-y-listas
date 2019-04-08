@@ -1,0 +1,1 @@
+mazo = ["seisDeOro", "cincoDeEspadas", "doceDeOro", "tresDeBasto", "tresDeOro", "cuatroDeCopas", "sieteDeBasto"]
