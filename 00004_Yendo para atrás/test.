@@ -1,1 +1,16 @@
-*todo*
+it "Visitar páginas las agrega a paginas_visitadas" do
+  visitar_pagina!("google.com")
+  visitar_pagina!("stackoverflow.com")
+  expect(paginas_visitadas).to be ["wikipedia.org", "mumuki.io", "github.com", "google.com", "stackoverflow.com"]
+end
+
+it "Volver atrás una vez saca una página de paginas_visitadas" do
+  volver_atras!
+  expect(paginas_visitadas).to be ["wikipedia.org", "mumuki.io"]
+end
+  
+it "Volver atrás dos veces saca dos páginas de paginas_visitadas" do
+  volver_atras!
+  volver_atras!
+  expect(paginas_visitadas).to be ["wikipedia.org"]
+end
