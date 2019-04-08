@@ -1,1 +1,3 @@
-*todo*
+it "El menú ejecutivo tiene pollo con puré como plato principal" do
+  expect(menu_ejecutivo).to be [vitel_tone, almendrado, pollo_con_pure, cafe]
+end
