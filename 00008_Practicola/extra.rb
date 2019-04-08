@@ -1,16 +1,11 @@
+class Persona
+end
+
 class Comercio
+  attr_accessor :cola1, cola2
   
   def initialize
     @cola1 = []
     @cola2 = []
   end
-  
-  def cola1
-    @cola1
-  end
-  
-  def cola2
-    @cola1
-  end
-  
 end

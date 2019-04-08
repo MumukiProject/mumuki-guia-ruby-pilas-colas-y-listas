@@ -1,1 +1,38 @@
-*todo*
+comercio = Comercio.new
+mariela = Persona.new
+alberto = Persona.new
+luisa = Persona.new
+pedro = Persona.new
+augusto = Persona.new
+
+it "Si atiendo a alguien de la cola1, se quita de esa cola" do
+  comercio.cola1([mariela, alberto, luisa])
+  comercio.cola1([pedro, augusto])
+  comercio.atender!(cola1)
+  expect(comercio.cola1).to be [alberto, luisa]
+  expect(comercio.cola1).to be [pedro, augusto]
+end
+
+it "Si atiendo a alguien de la cola2, se quita de esa cola" do
+  comercio.cola1([mariela, alberto, luisa])
+  comercio.cola1([pedro, augusto])
+  comercio.atender!(cola2)
+  expect(comercio.cola2).to be [mariela, alberto, luisa]
+  expect(comercio.cola2).to be [augusto]
+end
+
+it "Agregar alguien a la cola lo hace en la cola que menos gente hay" do
+  comercio.cola1([mariela, alberto, luisa])
+  comercio.cola2([pedro])
+  comercio.agregar_a_una_cola!(augusto)
+  expect(comercio.cola1).to be [mariela, alberto, luisa]
+  expect(comercio.cola2).to be [pedro, augusto]
+end
+
+it "Agregar otra persona a la cola lo hace en la cola que menos gente hay" do
+  comercio.cola1([mariela])
+  comercio.cola2([pedro, augusto])
+  comercio.agregar_a_una_cola!(luisa)
+  expect(comercio.cola1).to be [mariela, luisa]
+  expect(comercio.cola2).to be [pedro, augusto]
+end
