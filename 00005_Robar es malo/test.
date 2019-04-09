@@ -1,23 +1,25 @@
-espaniolas = Mazo.new([seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas])
-
 it "Descartar una carta la agrega al mazo" do
+  espaniolas = Mazo.new([seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas])
   espaniolas.descartar!(once_de_copas)
-expect(espaniolas.cartas.map { |carta| carta.to_string }).to eq ["6 de oro", "7 de espadas", "12 de oro", "3 de oro", "3 de basto", "4 de copas", "11 de copas"]
+  expect(espaniolas.cartas.map { |carta| carta.to_string }).to eq ["6 de oro", "7 de espadas", "12 de oro", "3 de oro", "3 de basto", "4 de copas", "11 de copas"]
 end
 
 it "Descartar otra carta la agrega al mazo" do
+  espaniolas = Mazo.new([seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas])
   espaniolas.descartar!(once_de_basto)
   expect(espaniolas.cartas.map { |carta| carta.to_string }).to eq ["6 de oro", "7 de espadas", "12 de oro", "3 de oro", "3 de basto", "4 de copas", "11 de basto"]
 end
 
 it "Robar dos cartas toma las dos cartas de arriba del mazo" do
+  espaniolas = Mazo.new([seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas])
   robadas = espaniolas.robar!(2)
   expect(robadas.map { |carta| carta.to_string }).to eq ["3 de basto", "4 de copas"]
-  expect(espaniolas.map { |carta| carta.to_string }).to eq ["6 de oro", "7 de espadas", "12 de oro", "3 de oro"]
+  expect(espaniolas.cartas.map { |carta| carta.to_string }).to eq ["6 de oro", "7 de espadas", "12 de oro", "3 de oro"]
 end
 
 it "Robar tres cartas toma las tres cartas de arriba del mazo" do
+  espaniolas = Mazo.new([seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas])
   robadas = espaniolas.robar!(3)
   expect(robadas.map { |carta| carta.to_string }).to eq ["3 de oro", "3 de basto", "4 de copas"]
-  expect(espaniolas.map { |carta| carta.to_string }).to eq ["6 de oro", "7 de espadas", "12 de oro"]
+  expect(espaniolas.cartas.map { |carta| carta.to_string }).to eq ["6 de oro", "7 de espadas", "12 de oro"]
 end
