@@ -8,15 +8,15 @@ language: text
 manual_evaluation: false
 choices:
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: La `estacion_de_tren` fue el primer elemento que se insertó
+  value: '`"estacion_de_tren"` fue el primer elemento que se insertó'
   checked: false
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: Para quitar la `escuela`, antes hay que quitar el `hospital`
+  value: Para quitar `"escuela"`, antes hay que quitar `"hospital"`
   checked: true
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: La `plaza` fue el primer elemento que se insertó
+  value: '`"plaza"` fue el primer elemento que se insertó'
   checked: true
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: Si quito un elemento, quedará la pila `[plaza, museo, escuela, hospital]`
+  value: Si quito un elemento, quedará la pila `["plaza", "museo", "escuela", "hospital"]`
   checked: true
 name: Pila pila
