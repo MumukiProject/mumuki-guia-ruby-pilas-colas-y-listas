@@ -1,3 +1,5 @@
+paginas_visitadas = ["wikipedia.org", "mumuki.io", "github.com"]
+
 it "Visitar páginas las agrega a paginas_visitadas" do
   visitar_pagina!("google.com")
   visitar_pagina!("stackoverflow.com")
