@@ -11,13 +11,13 @@ it "Visitar páginas las agrega a paginas_visitadas" do
 end
 
 it "Volver atrás una vez saca una página de paginas_visitadas" do
-  firefox.paginas_visitadas(["mumuki.io", "github.com", "wikipedia.org"])
+  firefox.paginas_visitadas=(["mumuki.io", "github.com", "wikipedia.org"])
   volver_atras!
   expect(firefox.paginas_visitadas).to eq ["mumuki.io", "github.com"]
 end
   
 it "Volver atrás dos veces saca dos páginas de paginas_visitadas" do
-  firefox.paginas_visitadas(["mumuki.io", "github.com", "wikipedia.org"])
+  firefox.paginas_visitadas=(["mumuki.io", "github.com", "wikipedia.org"])
   volver_atras!
   volver_atras!
   expect(firefox.paginas_visitadas).to eq ["mumuki.io"]
