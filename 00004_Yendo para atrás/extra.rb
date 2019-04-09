@@ -1,1 +1,5 @@
-paginas_visitadas = ["wikipedia.org", "mumuki.io", "github.com"]
+class Navegador
+  
+  attr_accessor :paginas_visitadas
+  
+end

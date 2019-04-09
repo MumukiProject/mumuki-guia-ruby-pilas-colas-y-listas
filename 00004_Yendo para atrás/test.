@@ -1,18 +1,24 @@
-paginas_visitadas = ["wikipedia.org", "mumuki.io", "github.com"]
+firefox = Navegador.new
+
+it "Si no visito ninguna página, no hay páginas visitadas" do
+  expect(firefox.paginas_visitadas).to be []
+end
 
 it "Visitar páginas las agrega a paginas_visitadas" do
-  visitar_pagina!("google.com")
-  visitar_pagina!("stackoverflow.com")
-  expect(paginas_visitadas).to be ["wikipedia.org", "mumuki.io", "github.com", "google.com", "stackoverflow.com"]
+  firefox.visitar_pagina!("wikipedia.org")
+  firefox.visitar_pagina!("mumuki.io")
+  expect(firefox.paginas_visitadas).to be ["wikipedia.org", "mumuki.io"]
 end
 
 it "Volver atrás una vez saca una página de paginas_visitadas" do
+  firefox.paginas_visitadas("mumuki.io", "github.com", "wikipedia.org")
   volver_atras!
-  expect(paginas_visitadas).to be ["wikipedia.org", "mumuki.io"]
+  expect(firefox.paginas_visitadas).to be ["mumuki.io", "github.com"]
 end
   
 it "Volver atrás dos veces saca dos páginas de paginas_visitadas" do
+  firefox.paginas_visitadas("mumuki.io", "github.com", "wikipedia.org")
   volver_atras!
   volver_atras!
-  expect(paginas_visitadas).to be ["wikipedia.org"]
+  expect(firefox.paginas_visitadas).to be ["mumuki.io"]
 end
