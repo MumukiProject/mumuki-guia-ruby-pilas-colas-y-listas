@@ -1,3 +1,3 @@
 it "Daniela ya no está en la carrera" do
-  expect(posiciones_carrera).to eq [rocio, ivana, laura, carolina, monica, karen, nadia]
+  expect(posiciones_carrera.map {|corredora| corredora.nombre}).to eq ["Rocío", "Ivana", "Laura", "Carolina", "Mónica", "Karen", "Nadia"]
 end
