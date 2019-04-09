@@ -6,32 +6,32 @@ pedro = Persona.new
 augusto = Persona.new
 
 it "Si atiendo a alguien cuando la cola1 es más larga, se quita de esa cola" do
-  comercio.cola1([mariela, alberto, luisa])
-  comercio.cola2([pedro, augusto])
+  comercio.cola1=([mariela, alberto, luisa])
+  comercio.cola2=([pedro, augusto])
   comercio.atender!
   expect(comercio.cola1).to eq [alberto, luisa]
   expect(comercio.cola2).to eq [pedro, augusto]
 end
 
 it "Si atiendo a alguien cuando la cola2 es más larga, se quita de esa cola" do
-  comercio.cola1([mariela, alberto])
-  comercio.cola2([pedro, augusto, luisa])
+  comercio.cola1=([mariela, alberto])
+  comercio.cola2=([pedro, augusto, luisa])
   comercio.atender!
   expect(comercio.cola1).to eq [mariela, alberto]
   expect(comercio.cola2).to eq [augusto, luisa]
 end
 
 it "Agregar alguien a la cola cuando la cola1 es más corta lo agrega a esa cola" do
-  comercio.cola1([mariela, alberto, luisa])
-  comercio.cola2([pedro])
+  comercio.cola1=([mariela, alberto, luisa])
+  comercio.cola2=([pedro])
   comercio.agregar_a_una_cola!(augusto)
   expect(comercio.cola1).to eq [mariela, alberto, luisa]
   expect(comercio.cola2).to eq [pedro, augusto]
 end
 
 it "Agregar alguien a la cola cuando la cola2 es más corta lo agrega a esa cola" do
-  comercio.cola1([mariela])
-  comercio.cola2([pedro, augusto])
+  comercio.cola1=([mariela])
+  comercio.cola2=([pedro, augusto])
   comercio.agregar_a_una_cola!(luisa)
   expect(comercio.cola1).to eq [mariela, luisa]
   expect(comercio.cola2).to eq [pedro, augusto]
