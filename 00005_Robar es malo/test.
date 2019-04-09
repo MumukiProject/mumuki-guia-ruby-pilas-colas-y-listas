@@ -5,7 +5,7 @@ it "Descartar una carta la agrega al mazo" do
   expect(espaniolas.cartas).to eq [seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas, once_de_copas]
 end
 
-it "Descartar una carta la agrega al mazo" do
+it "Descartar otra carta la agrega al mazo" do
   espaniolas.descartar!(once_de_basto)
   expect(espaniolas.cartas).to eq [seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas, once_de_basto]
 end
