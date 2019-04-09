@@ -1,21 +1,23 @@
-it "Descartar el tres de copas lo agrega al mazo" do
-  descartar!("tresDeCopas")
-  expect(mazo).to be ["seisDeOro", "cincoDeEspadas", "doceDeOro", "tresDeBasto", "tresDeOro", "cuatroDeCopas", "sieteDeBasto", "tresDeCopas"]
+espaniolas = Mazo.new([seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas])
+
+it "Descartar una carta la agrega al mazo" do
+  espaniolas.descartar!(once_de_copas)
+  expect(espaniolas.cartas).to eq [seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas, once_de_copas]
 end
 
-it "Descartar el doce de espadas lo agrega al mazo" do
-  descartar!("tresDeCopas")
-  expect(mazo).to be ["seisDeOro", "cincoDeEspadas", "doceDeOro", "tresDeBasto", "tresDeOro", "cuatroDeCopas", "sieteDeBasto", "doceDeEspadas"]
+it "Descartar una carta la agrega al mazo" do
+  espaniolas.descartar!(once_de_basto)
+  expect(espaniolas.cartas).to eq [seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas, once_de_basto]
 end
 
 it "Robar dos cartas toma las dos cartas de arriba del mazo" do
-  robadas = robar!(2)
-  expect(robadas).to be ["cuatroDeCopas", "sieteDeBasto"]
-  expect(mazo).to be ["seisDeOro", "cincoDeEspadas", "doceDeOro", "tresDeBasto", "tresDeOro"]
+  robadas = espaniolas.robar!(2)
+  expect(robadas).to eq [tres_de_basto, cuatro_de_copas]
+  expect(mazo).to eq [seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro]
 end
-  
+
 it "Robar tres cartas toma las tres cartas de arriba del mazo" do
-  robadas = robar!(3)
-  expect(robadas).to be ["tresDeOro", "cuatroDeCopas", "sieteDeBasto"]
-  expect(mazo).to be ["seisDeOro", "cincoDeEspadas", "doceDeOro", "tresDeBasto"]
+  robadas = espaniolas.robar!(3)
+  expect(robadas).to eq [tres_de_oro, tres_de_basto, cuatro_de_copas]
+  expect(mazo).to eq [seis_de_oro, siete_de_espadas, doce_de_oro]
 end
