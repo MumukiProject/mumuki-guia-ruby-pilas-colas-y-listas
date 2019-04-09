@@ -4,6 +4,7 @@ En Ruby contamos con un mensaje para agregar elementos al final del array (`push
 
 > Experimentá con la pila `lugares_de_mi_barrio` y agregale un `kiosco` utilizando `push`. Luego, hacé `pop` hasta quitar todos los elementos.
 
-> Recordá que el mensaje se lo podés enviar a la pila de la siguiente forma:
-
-> `ム lugares_de_mi_barrio.pop`
+> ```ruby
+ム lugares_de_mi_barrio.push(kiosco)
+ム lugares_de_mi_barrio.pop
+```
