@@ -1,4 +1,4 @@
-Esta vez estamos en un restaurante :fork_and_knife: de altísimo renombre, y decidimos pedir el menú ejecutivo: hoy ofrecen `vitel_tone` como entrada, `pollo_con_pure` de plato principal, `almendrado` de postre, y finalmente `cafe`.
+Después de tanto trabajo nos dio hambre Esta vez estamos en un restaurante :fork_and_knife: de altísimo renombre, y decidimos pedir el menú ejecutivo: hoy ofrecen `vitel_tone` como entrada, `pollo_con_pure` de plato principal, `almendrado` de postre, y finalmente `cafe`.
 El problema es que su sistema omitió el plato principal - ¡nos vamos a quedar con hambre! :triumph:
 
 ```ruby
