@@ -1,1 +1,1 @@
-¡Correcto! De cualquiera de esas dos formas nos aseguramos que sea una cola, porque en los otros dos sería una pila. En particular, nosotros vamos a agregar los elementos al final y quitarlos del principio. :thumbsup:
+¡Correcto! De esta forma nos aseguramos que sea una cola, porque en los otros dos casos estaríamos hablando de una pila. :thumbsup:
