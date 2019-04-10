@@ -1,6 +1,6 @@
 Entonces, para agregar elementos seguiremos usando `push`, pero tenemos un nuevo método para *quitarlos del principio*: `shift`. La única diferencia entre `shift` y `pop` es de dónde quita cada uno el elemento.
 
-Por ejemplo, tenemos una cola de mensajes por responder...
+Por ejemplo, si tuvieramos una cola de mensajes por responder...
 
 ```ruby
 ム mensajes
