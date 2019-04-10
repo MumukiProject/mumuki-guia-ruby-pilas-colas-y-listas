@@ -10,9 +10,9 @@ Afortunadamente para nuestro problema :sweat_smile:, las listas entienden el men
 
 ```ruby
 ム primeros_cinco_numeros_pares.delete_at(3)
-> 8
+=> 8
 ム primeros_cinco_numeros_pares
-> [2, 4, 6, 10]
+=> [2, 4, 6, 10]
 ```
 
 > Quitá a `daniela`, que llegó en *tercera* posición, de la lista `posiciones_carrera`.
