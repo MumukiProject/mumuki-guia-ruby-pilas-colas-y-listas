@@ -1,4 +1,5 @@
 Después de tanto trabajo nos dio un poco de hambre. Vamos a comer a un restaurante :fork_and_knife: cerca de donde vivimos porque sabemos que tiene excelentes precios y menú ejecutivo: hoy ofrecen `sopa` como entrada :stew:, `pollo_con_pure` de plato principal :poultry_leg:, `almendrado` de postre :ice_cream:, y finalmente `cafe`. :coffee:
+
 El problema es que su sistema omitió el plato principal - ¡nos vamos a quedar con hambre! :triumph:
 
 ```ruby
