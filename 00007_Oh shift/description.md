@@ -1,4 +1,4 @@
-Entonces, para agregar elementos seguiremos usando `push`, pero tenemos un nuevo método para *quitarlos del principio*: `shift`. Salvo respecto de dónde quita cada uno el elemento, `shift` para las colas y `pop` para las pilas no tienen ninguna otra diferencia.
+Entonces, para agregar elementos seguiremos usando `push`, pero tenemos un nuevo método para *quitarlos del principio*: `shift`. La única diferencia entre `shift` y `pop` es de dónde quita cada uno el elemento.
 
 Por ejemplo, tenemos una cola de mensajes por responder...
 
