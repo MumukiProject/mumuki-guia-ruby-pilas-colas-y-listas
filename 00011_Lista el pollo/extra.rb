@@ -8,9 +8,9 @@ class Comida
   end
 end
 
-vitel_tone = Comida.new("Vitel toné")
+sopa = Comida.new("Sopa")
 almendrado = Comida.new("Almendrado")
 pollo_con_pure = Comida.new("Pollo con puré")
 cafe = Comida.new("Café")
 
-menu_ejecutivo = [vitel_tone, almendrado, cafe]
+menu_ejecutivo = [sopa, almendrado, cafe]
