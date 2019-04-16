@@ -12,5 +12,7 @@ Seguramente te sea útil saber que el método `pop` puede recibir un parámetro 
 > Escribí los métodos `robar!` y `descartar!` en una nueva clase `Mazo`, que contiene la pila `cartas`. Al inicializar una instancia de la clase `Mazo`, debe recibir por parámetro qué `cartas` tiene la pila en ese momento. Un ejemplo de uso sería:
 
 > ```ruby
-espaniolas = Mazo.new([seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas])
+ム espaniolas = Mazo.new([seis_de_oro, siete_de_espadas, doce_de_oro, tres_de_oro, tres_de_basto, cuatro_de_copas])
+ム espaniolas.robar!(2)
+ム espaniolas.descartar!(once_de_espadas)
 ```
